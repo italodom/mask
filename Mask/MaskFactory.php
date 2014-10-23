@@ -22,6 +22,12 @@ class MaskFactory
         MaskTypes::MASK_CLEAR_MONEY     => 'Mask\Masks\MaskClearMoney',
     );
 
+    /**
+     * @param $type
+     * @param $value
+     *
+     * @return AbstractMask
+     */
     public static function factory($type, $value)
     {
         if (isset(self::$types[$type]) === false) {
