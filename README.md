@@ -1,6 +1,6 @@
 Mask [![Build Status](https://travis-ci.org/italodom/mask.svg?branch=master)](https://travis-ci.org/italodom/mask)
 ===============
-Para criação de máscaras de CPF, CEP, Monetária, etc
+Para criação de máscaras de CPF, CEP, Monetária, Telefone, etc
 
 Installation
 ============
