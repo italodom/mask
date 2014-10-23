@@ -22,4 +22,6 @@ abstract class MaskTypes
     const MASK_MONEY_NO_SYMBOL = 'money_no_symbol';
 
     const MASK_CLEAR_MONEY = 'clear_mask_money';
+
+    const MASK_TELEFONE = 'telefone';
 }
