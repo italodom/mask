@@ -27,6 +27,10 @@ echo MaskFactory::factory(MaskTypes::MASK_CEP, '99999999')->getMasked();
 echo MaskFactory::factory(MaskTypes::MASK_CPF, '33344455566')->getMasked();
 // Saída: 333.444.555-88
 
+// Formatando Máscara para CNPJ
+echo MaskFactory::factory(MaskTypes::MASK_CNPJ, '00000000000100')->getMasked();
+// Saída: 00.000.000/0001-00
+
 // Formatando Máscara monetária sem o simbolo
 echo MaskFactory::factory(MaskTypes::MASK_MONEY_NO_SYMBOL, '1234.56')->getMasked();
 // Saída: 1.234,56

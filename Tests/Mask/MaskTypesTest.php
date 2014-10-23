@@ -49,4 +49,12 @@ class MaskTypesTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('telefone', $stub::MASK_TELEFONE);
     }
+
+    public function testTypeCnpj()
+    {
+        /** @var MaskTypes $stub */
+        $stub = $this->getMockForAbstractClass('Mask\MaskTypes');
+
+        $this->assertEquals('cnpj', $stub::MASK_CNPJ);
+    }
 }

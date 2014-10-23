@@ -18,6 +18,7 @@ class MaskFactory
     private static $mapTypes = array(
         MaskTypes::MASK_CEP             => 'Mask\Masks\MaskCep',
         MaskTypes::MASK_CPF             => 'Mask\Masks\MaskCpf',
+        MaskTypes::MASK_CNPJ            => 'Mask\Masks\MaskCnpj',
         MaskTypes::MASK_MONEY_NO_SYMBOL => 'Mask\Masks\MaskMoneyNoSymbol',
         MaskTypes::MASK_CLEAR_MONEY     => 'Mask\Masks\MaskClearMoney',
         MaskTypes::MASK_TELEFONE        => 'Mask\Masks\Telefone\MaskTelefone',

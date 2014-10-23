@@ -24,4 +24,6 @@ abstract class MaskTypes
     const MASK_CLEAR_MONEY = 'clear_mask_money';
 
     const MASK_TELEFONE = 'telefone';
+
+    const MASK_CNPJ = 'cnpj';
 }
