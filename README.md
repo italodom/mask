@@ -36,18 +36,18 @@ echo MaskFactory::factory(MaskTypes::MASK_CLEAR_MONEY, '1.234,56')->getMasked();
 // Saída: 1234.56
 
 // Formatando Máscara para telefone
-echo MaskFactory::factory(MaskTypes::MASK_CLEAR_MONEY, '1122223333')->getMasked();
+echo MaskFactory::factory(MaskTypes::MASK_TELEFONE, '1122223333')->getMasked();
 // Saída: (11) 2222-3333
 
 // Formatando Máscara para telefone
-echo MaskFactory::factory(MaskTypes::MASK_CLEAR_MONEY, '01133334444')->getMasked();
+echo MaskFactory::factory(MaskTypes::MASK_TELEFONE, '01133334444')->getMasked();
 // Saída: (11) 3333-4444
 
 // Formatando Máscara para telefone
-echo MaskFactory::factory(MaskTypes::MASK_CLEAR_MONEY, '11944445555')->getMasked();
+echo MaskFactory::factory(MaskTypes::MASK_TELEFONE, '11944445555')->getMasked();
 // Saída: (11) 94444-5555
 
 // Formatando Máscara para telefone
-echo MaskFactory::factory(MaskTypes::MASK_CLEAR_MONEY, '011955556666')->getMasked();
+echo MaskFactory::factory(MaskTypes::MASK_TELEFONE, '011955556666')->getMasked();
 // Saída: (11) 95555-6666
 ```
