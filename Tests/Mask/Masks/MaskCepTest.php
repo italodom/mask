@@ -10,12 +10,10 @@ use Mask\Masks\MaskCep;
 
 class MaskCepTest extends \PHPUnit_Framework_TestCase
 {
-    public function testGetFormatMask()
+    public function testGetMaskCep()
     {
-        $class = new \ReflectionClass('Mask\Masks\MaskCep');
-        $method = $class->getMethod('getFormatMask');
-        $method->setAccessible(true);
+        $maskCep = new MaskCep('00000111');
 
-        $this->assertEquals('#####-###', $method->invoke(new MaskCep('123')));
+        $this->assertEquals('00000-111', $maskCep->getMasked());
     }
 }

@@ -10,12 +10,10 @@ use Mask\Masks\MaskMoneyNoSymbol;
 
 class MaskMoneyNoSymbolTest extends \PHPUnit_Framework_TestCase
 {
-    public function testGetFormatMask()
+    public function testGetMaskMoneyNoSymbol()
     {
-        $class = new \ReflectionClass('Mask\Masks\MaskMoneyNoSymbol');
-        $method = $class->getMethod('getFormatMask');
-        $method->setAccessible(true);
+        $maskMoneyNoSymbol = new MaskMoneyNoSymbol('1234.56');
 
-        $this->assertEquals('1.234,56', $method->invoke(new MaskMoneyNoSymbol('1234.56')));
+        $this->assertEquals('1.234,56', $maskMoneyNoSymbol->getMasked());
     }
 }

@@ -36,6 +36,7 @@ class MaskFactoryTest extends \PHPUnit_Framework_TestCase
             array(MaskTypes::MASK_CPF, 'Mask\Masks\MaskCpf'),
             array(MaskTypes::MASK_MONEY_NO_SYMBOL, 'Mask\Masks\MaskMoneyNoSymbol'),
             array(MaskTypes::MASK_CLEAR_MONEY, 'Mask\Masks\MaskClearMoney'),
+            array(MaskTypes::MASK_TELEFONE, 'Mask\Masks\Telefone\MaskTelefone'),
         );
     }
 }

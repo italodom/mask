@@ -10,12 +10,10 @@ use Mask\Masks\MaskCpf;
 
 class MaskCpfTest extends \PHPUnit_Framework_TestCase
 {
-    public function testGetFormatMask()
+    public function testGetMaskCpf()
     {
-        $class = new \ReflectionClass('Mask\Masks\MaskCpf');
-        $method = $class->getMethod('getFormatMask');
-        $method->setAccessible(true);
+        $maskCpf = new MaskCpf('33344455566');
 
-        $this->assertEquals('###.###.###-##', $method->invoke(new MaskCpf('value')));
+        $this->assertEquals('333.444.555-66', $maskCpf->getMasked());
     }
 }

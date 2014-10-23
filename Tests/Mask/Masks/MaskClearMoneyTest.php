@@ -10,12 +10,10 @@ use Mask\Masks\MaskClearMoney;
 
 class MaskClearMoneyTest extends \PHPUnit_Framework_TestCase
 {
-    public function testGetFormatMask()
+    public function testGetMaskClearMoney()
     {
-        $class = new \ReflectionClass('Mask\Masks\MaskClearMoney');
-        $method = $class->getMethod('getFormatMask');
-        $method->setAccessible(true);
+        $maskClearMoney = new MaskClearMoney('1.234,56');
 
-        $this->assertEquals('1234.56', $method->invoke(new MaskClearMoney('1.234,56')));
+        $this->assertEquals('1234.56', $maskClearMoney->getMasked());
     }
 }

@@ -41,4 +41,12 @@ class MaskTypesTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('money_no_symbol', $stub::MASK_MONEY_NO_SYMBOL);
     }
+
+    public function testTypeTelefone()
+    {
+        /** @var MaskTypes $stub */
+        $stub = $this->getMockForAbstractClass('Mask\MaskTypes');
+
+        $this->assertEquals('telefone', $stub::MASK_TELEFONE);
+    }
 }
