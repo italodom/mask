@@ -15,7 +15,7 @@ namespace Mask;
  */
 class MaskFactory
 {
-    private static $types = array(
+    private static $mapTypes = array(
         MaskTypes::MASK_CEP             => 'Mask\Masks\MaskCep',
         MaskTypes::MASK_CPF             => 'Mask\Masks\MaskCpf',
         MaskTypes::MASK_MONEY_NO_SYMBOL => 'Mask\Masks\MaskMoneyNoSymbol',
@@ -31,11 +31,11 @@ class MaskFactory
      */
     public static function factory($type, $value)
     {
-        if (isset(self::$types[$type]) === false) {
+        if (isset(self::$mapTypes[$type]) === false) {
             throw new \InvalidArgumentException(sprintf('A máscara "%s" não existe!', $type) );
         }
 
-        $class = self::$types[$type];
+        $class = self::$mapTypes[$type];
 
         return new $class($value);
     }
